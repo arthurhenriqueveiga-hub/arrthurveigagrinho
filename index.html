@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte: O Motor do Nosso País</title>
+    <style>
+        /* Configurações Globais e Cores */
+        :root {
+            --verde-principal: #2e7d32;
+            --verde-claro: #4caf50;
+            --laranja-sol: #ff9800;
+            --azul-tecnologia: #00bcd4;
+            --fundo-creme: #f1f8e9;
+            --texto-escuro: #263238;
+            --branco: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--fundo-creme);
+            color: var(--texto-escuro);
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho (Header) */
+        header {
+            background: linear-gradient(135deg, var(--verde-principal), var(--verde-claro));
+            color: var(--branco);
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Seção de Introdução */
+        .introducao {
+            background-color: var(--branco);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            border-left: 8px solid var(--laranja-sol);
+        }
+
+        .introducao h2 {
+            color: var(--verde-principal);
+            margin-bottom: 15px;
+        }
+
+        /* Cards Explicativos (Grid) */
+        .grid-pilares {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background-color: var(--branco);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-topo {
+            padding: 20px;
+            color: var(--branco);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Cores específicas para cada pilar */
+        .pilar-economia { background-color: var(--verde-principal); }
+        .pilar-tecnologia { background-color: var(--azul-tecnologia); }
+        .pilar-sustentavel { background-color: var(--laranja-sol); }
+
+        .card-corpo {
+            padding: 25px;
+        }
+
+        .card-corpo ul {
+            list-style-type: '✓ ';
+            margin-left: 20px;
+            color: var(--texto-escuro);
+        }
+
+        .card-corpo li {
+            margin-bottom: 10px;
+        }
+
+        /* Seção Informativa de Destaque */
+        .curiosidade {
+            background: linear-gradient(135deg, #37474f, #263238);
+            color: var(--branco);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .curiosidade h3 {
+            color: var(--laranja-sol);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        /* Rodapé (Footer) */
+        footer {
+            background-color: var(--verde-principal);
+            color: var(--branco);
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2rem; }
+            header p { font-size: 1rem; }
+            .container { margin: 20px auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>O Agro é Forte</h1>
+        <p>Alimentando o mundo, movendo a economia e inovando o futuro.</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="introducao">
+            <h2>O que significa "Agro Forte"?</h2>
+            <p>O conceito de <strong>Agro Forte</strong> representa a potência do agronegócio moderno. Vai muito além de plantar e colher: envolve uma cadeia gigantesca de ciência, tecnologia, logística e respeito ao meio ambiente que garante a segurança alimentar de bilhões de pessoas todos os dias.</p>
+        </section>
+
+        <section class="grid-pilares">
+            
+            <div class="card">
+                <div class="card-topo pilar-economia">
+                    🌱 Motor Econômico
+                </div>
+                <div class="card-corpo">
+                    <p style="margin-bottom: 15px;">O agronegócio é a base de sustentação financeira do Brasil:</p>
+                    <ul>
+                        <li>Gera milhões de empregos diretos e indiretos no campo e na cidade.</li>
+                        <li>É responsável por grande parte das exportações do país.</li>
+                        <li>Garante a circulação de renda em centenas de municípios.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-topo pilar-tecnologia">
+                    🚀 Alta Tecnologia
+                </div>
+                <div class="card-corpo">
+                    <p style="margin-bottom: 15px;">O campo hoje é digital e extremamente conectado:</p>
+                    <ul>
+                        <li><strong>Drones e Satélites:</strong> Monitoram a saúde das plantas em tempo real.</li>
+                        <li><strong>Maquinário Inteligente:</strong> Tratores guiados por GPS evitam desperdício.</li>
+                        <li><strong>Biotecnologia:</strong> Sementes mais resistentes ao clima e a pragas.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-topo pilar-sustentavel">
+                    ☀️ Sustentabilidade
+                </div>
+                <div class="card-corpo">
+                    <p style="margin-bottom: 15px;">Produzir mais utilizando menos recursos naturais:</p>
+                    <ul>
+                        <li><strong>Integração Lavoura-Pecuária-Floresta (ILPF):</strong> Recupera o solo.</li>
+                        <li><strong>Bioinsumos:</strong> Uso de defensores naturais em vez de químicos.</li>
+                        <li>Preservação de áreas de mata nativa dentro das propriedades.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="curiosidade">
+            <h3>Você sabia?</h3>
+            <p>O Brasil é um dos líderes mundiais na produção e exportação de vários alimentos, como café, suco de laranja, soja, açúcar e carne bovina. Graças à ciência brasileira (como o trabalho da EMBRAPA), transformamos solos antes considerados inférteis em verdadeiros celeiros do mundo!</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Orgulho de ser Agro. Desenvolvido com HTML e CSS.</p>
+    </footer>
+
+</body>
+</html>
